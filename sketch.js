@@ -8,6 +8,7 @@ var backgroundImg,platform;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
+
 }
 
 function setup(){
@@ -15,7 +16,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-
+console.log("hello")
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
 
